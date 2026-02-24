@@ -1,0 +1,8 @@
+# Gradio temp folder
+.gradio/
+
+# Python
+__pycache__/
+
+# Virtual environment
+employee_app_env/
