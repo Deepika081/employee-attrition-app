@@ -41,7 +41,7 @@ Top 3 Factors Influencing Prediction:
   ↓ satisfaction_level (-0.074)
 ```
 
-![alt text](<Screenshot 2026-02-24 184412.png>)
+![alt text](<gradio_demo.png>)
 
 ---
 
