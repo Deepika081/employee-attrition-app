@@ -26,7 +26,7 @@ def predict_attrition_gradio(
     }
 
     try:
-        response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+        response = requests.post("http://backend:8000/predict", json=payload)
         data = response.json()
         
         leave_pct = round(data['leave_probability'] * 100)

@@ -8,8 +8,8 @@ import pandas as pd
 from pathlib import Path
 import shap
 
-BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR.parent / "experiments" / "my_pipeline.joblib"
+# BASE_DIR = Path(__file__).resolve().parent
+# MODEL_PATH = BASE_DIR.parent / "experiments" / "my_pipeline.joblib"
 
 app_state = {}
 
@@ -17,7 +17,7 @@ app_state = {}
 async def lifespan(app: FastAPI):
     print("Loading pipeline at startup...")
     try:
-        pipeline = joblib.load(MODEL_PATH)
+        pipeline = joblib.load("my_pipeline.joblib")
         app_state["pipeline"] = pipeline
 
         model = pipeline.named_steps["model"]
